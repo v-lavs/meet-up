@@ -1,0 +1,75 @@
+.menu {
+    display: none;
+    margin: 0;
+    @include respond-to($lg) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .menu-item {
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color;
+        text-align: right;
+        &:last-child {
+            border: none;
+        }
+        @include respond-to($lg) {
+            display: inline-block;
+            border: none;
+            margin-left: 40px;
+        }
+        a {
+            display: block;
+            padding: 20px 0;
+            text-transform: uppercase;
+            color: inherit;
+            text-align: left;
+            transition: .35s;
+            &:hover,
+            &:focus {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.header-menu {
+    @media all and (max-width: 1030px) {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        max-width: 320px;
+        width: 100%;
+        background: $dark-color;
+        padding: 40px 20px;
+        max-height: 100%;
+        overflow-y: auto;
+        text-align: right;
+        font-size: 15px;
+        font-weight: 100;
+        transform: translateX(100%);
+        transition: .6s ease;
+        z-index: 9999;
+        &.open {
+            transform: translateX(0);
+            .menu {
+                display: block;
+            }
+        }
+    }
+    .btn-close  {
+        background:transparent;
+        border: none;
+        font-family: "Font Awesome";
+        font-size: 30px;
+        margin-bottom: 20px;
+        &:hover,
+        &:focus {
+            color: $secondary-color;
+        }
+        @include respond-to($lg) {
+            display: none;
+        }
+    }
+}

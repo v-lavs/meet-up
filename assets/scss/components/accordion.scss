@@ -1,0 +1,107 @@
+.accordeon {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    .panel-accordion-heading {
+        display: flex;
+        width: 100%;
+        background-color: $secondary-color;
+        font-size: 20px;
+        color: $primary-color;
+    }
+    .panel {
+        &:nth-of-type(odd) .panel-heading {
+            background-color: $dark-300-color;
+        }
+        &:nth-of-type(even) .panel-heading {
+            background-color: $dark-400-color;
+        }
+    }
+    .panel-heading {
+        display: flex;
+        color: $primary-color;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 0;
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
+    }
+    .link-heading-panel {
+        display: flex;
+        width: 100%;
+    }
+    .time-spending {
+        width: 20%;
+        padding: 10px 0;
+        text-align: center;
+        @include respond-to($md) {
+            width: 30%;
+            padding: 16px 20px 13px;
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+    .accordion-title-time {
+        width: 20%;
+        padding: 10px 0;
+        text-align: center;
+        @include respond-to($md) {
+            width: 30%;
+            padding: 19px 20px 15px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+    }
+    .accordion-title-event {
+        width: 80%;
+        padding: 10px 35px 10px 20px;
+        @include respond-to($md) {
+            width: 70%;
+            padding: 19px 80px 15px 0;
+            font-size: 30px;
+            font-weight: 900;
+        }
+    }
+    .event {
+        position: relative;
+        width: 80%;
+        padding: 10px 35px 10px 20px;
+        @include respond-to($md) {
+            width: 70%;
+            font-size: 22px;
+            font-weight: 400;
+            padding: 16px 80px 13px 0;
+        }
+        .open-panel {
+            position: absolute;
+            background-image: url(../img/more-icon.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            @include respond-to($md) {
+                right: 50px;
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+    .panel-collapse {
+        display: none;
+        padding: 15px;
+        border: 1px solid $grey;
+
+    }
+    .open {
+        display: block;
+        .open-panel {
+            background-image: url(../img/minus.svg);
+        }
+    }
+}

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meetup</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <!--styles-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header-site">
+        <div class="container container-default">
+            <a class="logo-site">
+                <img src="assets/img/logo.png" alt="ENVATO" class="img-logo-site">
+            </a>
+            <nav class="header-menu">
+
+                <button class="btn-close btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <ul id="menu" class="menu">
+                    <li class="menu-item">
+                        <a href="#details" class="menu-link">Event Details</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#speakers" class="menu-link">Speakers</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#sponsors" class="menu-link">Sponsors</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#past" class="menu-link">Past Events</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact" class="menu-link">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <button class="btn btn-burger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="section-banner section-bg" style="background-image: url(assets/img/event8.jpg)">
+        <div class="container container-default">
+            <h1 class="section-banner-title visually-hidden">Meetup in Bangladesh</h1>
+            <div class="wraper-coutdown bounceInDown animated">
+                <div id="countdown">
+                    <p class="content-counter">
+                        <span id="days">00</span>
+                        <span class="signature-counter">days </span>
+                    </p>
+                    :
+                    <p class="content-counter">
+                        <span id="hours">00</span>
+                        <span class="signature-counter">hours </span></p>
+                    :
+                    <p class="content-counter">
+                        <span id="minutes">00</span>
+                        <span class="signature-counter">minutes </span>
+                    </p>
+                    :
+                    <p class="content-counter">
+                        <span id="seconds">00</span>
+                        <span class="signature-counter">seconds </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-animate">
+            <div class="container">
+                <ul class="list-icon-event">
+                    <li class="item-icon-event event5">
+                        <img src="assets/img/icon-1.png" alt="" class="img-icon-event">
+                    </li>
+                    <li class="item-icon-event event4">
+                        <img src="assets/img/icon-2.png" alt="" class="img-icon-event">
+                    </li>
+                    <li class="item-icon-event event3">
+                        <img src="assets/img/icon-3.png" alt="" class="img-icon-event">
+                    </li>
+                    <li class="item-icon-event event2">
+                        <img src="assets/img/icon-4.png" alt="" class="img-icon-event">
+                    </li>
+                    <li class="item-icon-event event1">
+                        <img src="assets/img/icon-5.png" alt="" class="img-icon-event">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="section-schedule">
+        <div class="container container-default">
+            <div class="greeting">
+                <div class="box-motivation">
+                    <p class="motivation text-xl">Welcome!</p>
+                    <p class="text-section">The biggest envato community meetup in Bangladesh is happening right now!
+                        And
+                        you can be a part of it too...
+                    </p>
+                    <p class="text-section">Get together with members of the Envato community to talk shop, trade war
+                        stories, make new friends and see the faces behind the avatars. Whether you’re an author on
+                        Envat
+                        Market, a client on EnvatoS tudio, or a learner on Tuts+, you are invited!
+                    </p>
+                    <p class="text-section">It doesn’t matter as long as you have the motivation and interest to work at
+                        the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies!
+                        ;)
+                        Head over and fill up the sign up form here so that we can keep track of our guests. Don’t
+                        forget
+                        to register on our nvite page here too!
+                    </p>
+                </div>
+                <form class="form form-registration" action="#" method="post" enctype="multipart/form-data"
+                      name="form-registration">
+                    <h4 class="title-form">Sign up for our event</h4>
+                    <ul class="form-list">
+                        <li class="form-item">
+                            <label for="name" class="visually-hidden">Enter your name</label>
+                            <input class="input" type="text" name="name" id="name"
+                                   placeholder="Enter your name">
+                        </li>
+                        <li class="form-item">
+                            <label for="our-email" class="visually-hidden">Enter your email</label>
+                            <input class="input" type="email" name="email" id="our-email"
+                                   pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                                   placeholder="Enter your email">
+                        </li>
+                        <li class="form-item">
+                            <label for="phone" class="visually-hidden">Phone number</label>
+                            <input class="input" type="tel" name="telephone" id="phone"
+                                   placeholder="Phone number">
+                        </li>
+                        <li class="form-item">
+                            <label for="user-name" class="visually-hidden">Envato Username</label>
+                            <input class="input" type="text" name="user-name" id="user-name"
+                                   placeholder="Envato Username">
+                        </li>
+                        <li class="form-item">
+                            <button type="submit" class="btn btn-submit">Let me in!</button>
+                        </li>
+                    </ul>
+                    <p class="text-form">Hurry up, Limited seats availble</p>
+                    <p class="text-form">*we will never spam your email</p>
+                </form>
+            </div>
+            <ul class="list-subjects">
+                <li class="item-subjects card-subjects">
+                    <div class="card-subjects">
+                        <div class="bg-icon-event" style="background-image: url(assets/img/icon-5b.png)">
+                        </div>
+                        <h2 class="card-title">Community</h2>
+                        <p class="card-content">Meet the Community you’ve always talked with, in real life! This meetup
+                            will
+                            be all about authors engaging each other with interesting coversation and topics. We will
+                            have
+                            loads of fun.
+                        </p>
+                    </div>
+                </li>
+                <li class="item-subjects card-subjects">
+                    <div class="">
+                        <div class="bg-icon-event" style="background-image: url(assets/img/icon-1.png)">
+                        </div>
+                        <h2 class="card-title">Talk Shop</h2>
+                        <p class="card-content">In this meetup you will get to know the marketplaces better, because
+                            that’s
+                            why were all here for right? Learn a few tips and tricks from experienced authors from all
+                            over
+                            the country.
+                        </p>
+                    </div>
+                </li>
+                <li class="item-subjects card-subjects">
+                    <div class="card-subjects">
+                        <div class="bg-icon-event" style="background-image: url(assets/img/icon-7.png)">
+                        </div>
+                        <h2 class="card-title">War Stories</h2>
+                        <p class="card-content">Gather round fellow authors! Hear the stories of success from your
+                            favorite
+                            authors and learn how they we able to tackle their problems and become successful.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <!--accordeon-->
+            <div class="accordeon">
+                <div class="panel-accordion-heading">
+                    <div class="accordion-title-time">Time</div>
+                    <div class="accordion-title-event">Stuff that will happen</div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <a href="#" class="link-heading-panel">
+                            <div class="time-spending">12pm - 02 pm</div>
+                            <div class="event">Sessions by honorable guests and Speakers <span
+                                    class="open-panel"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel-collapse">
+                        <div class="panel-body dynamic-contetn">
+                            <p>Our date is a surprise & it’s different every month! If we send you an at-home date, it
+                                will
+                                include games, fun activities, how-to classes, snack & drink recipes, keepsakes, and
+                                more.
+                                If we send you a local date, you may be headed to try a new restaurant, take a tour, or
+                                go
+                                on an adventure.
+                            </p>
+                            <p>Voucher codes to redeem your date when you arrive.</p>
+                            <p>Every date also comes with a complete date guide, custom playlist, & conversation
+                                starters so
+                                you can get to know each other more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <a href="#" class="link-heading-panel">
+                            <div class="time-spending">12pm - 02 pm</div>
+                            <div class="event">Sessions by honorable guests and Speakers<span class="open-panel"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel-collapse">
+                        <div class="panel-body dynamic-contetn">
+                            <p>Our date is a surprise & it’s different every month! If we send you an at-home date, it
+                                will
+                                include games, fun activities, how-to classes, snack & drink recipes, keepsakes, and
+                                more.
+                                If we send you a local date, you may be headed to try a new restaurant, take a tour, or
+                                go
+                                on an adventure.
+                            </p>
+                            <p>Voucher codes to redeem your date when you arrive.</p>
+                            <p>Every date also comes with a complete date guide, custom playlist, & conversation
+                                starters so
+                                you can get to know each other more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <a href="#" class="link-heading-panel">
+                            <div class="time-spending">02pm - 03pm</div>
+                            <div class="event">Break and Mingle time with the authors<span class="open-panel"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel-collapse">
+                        <div class="panel-body dynamic-contetn">
+                            <p>Our date is a surprise & it’s different every month! If we send you an at-home date, it
+                                will
+                                include games, fun activities, how-to classes, snack & drink recipes, keepsakes, and
+                                more.
+                                If we send you a local date, you may be headed to try a new restaurant, take a tour, or
+                                go
+                                on an adventure.
+                            </p>
+                            <p>Voucher codes to redeem your date when you arrive.</p>
+                            <p>Every date also comes with a complete date guide, custom playlist, & conversation
+                                starters so
+                                you can get to know each other more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <a href="#" class="link-heading-panel">
+                            <div class="time-spending">03pm - 05pm</div>
+                            <div class="event">Portfolio Review, Rewards and Ending Presentation<span
+                                    class="open-panel"></span></div>
+                        </a>
+                    </div>
+                    <div class="panel-collapse">
+                        <div class="panel-body dynamic-contetn">
+                            <p>Our date is a surprise & it’s different every month! If we send you an at-home date, it
+                                will
+                                include games, fun activities, how-to classes, snack & drink recipes, keepsakes, and
+                                more.
+                                If we send you a local date, you may be headed to try a new restaurant, take a tour, or
+                                go
+                                on an adventure.
+                            </p>
+                            <p>Voucher codes to redeem your date when you arrive.</p>
+                            <p>Every date also comes with a complete date guide, custom playlist, & conversation
+                                starters so
+                                you can get to know each other more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end accordeon-->
+
+            <p class="text-section text-center">Please keep in mind that the timings may differ according to the flow of
+                the
+                event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have
+                to
+                be, if we all agree to hangour for some time more, what harm could it do? :)
+            </p>
+        </div>
+    </section>
+
+    <section class="section-reward section-bg" style="background-image: url(assets/img/event4.jpg)">
+        <div class="container container-default">
+            <div class="wrap-img-revard">
+                <img src="assets/img/elite-badge.png" alt="round" class="img-revard">
+            </div>
+            <div class="conditions-text">
+                <h2 class="section-bg-title text-xl">We reward the Elites!</h2>
+                <p class="text-section">Are you an Elite author in the Envato Marketplaces? If so we are proud of you!
+                    We
+                    want to give our thanks in achieving great success in the marketplace and we want to make known to
+                    the
+                    people of our country that you are amazing! Our Elite gifting program includes giving you special
+                    merchandize from our community and also promote your works in our community
+                </p>
+                <p class="text-section">All you have to do is contact us by clicking the button here and then its just
+                    going to the event, saying something motivational and taking that swag while looking amazing infront
+                    of thousands of other community members.
+                </p>
+                <p class="text-section">*Be advised, we will only give you Elite thank you swag for each level of elite
+                    you
+                    cross. That means if you do not cross to the next elite level before the next event, you cannot
+                    claim
+                    your prizes.
+                </p>
+            </div>
+            <div class="wrap-btn">
+                <a href="#" class="btn btn-main">Bring on the swag!</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="speakers" class="section-speakers">
+        <div class="container container-default">
+            <h2 class="section-title text-xl">Speakers</h2>
+            <p class="text-section">Meet our Valuable speakers who will be each giving 10 minutes sessions on different
+                subjects regarding being a digital product author, working at envato and marketing your business. Hope
+                you
+                will have a great time listening to our presentations!
+            </p>
+            <ul class="list-speakers">
+                <li class="item-speaker">
+                    <div class="card-img-speaker">
+                        <img src="assets/img/event3.jpg" alt="people" class="img-speaker">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h4 class="title-overlay">Shahriyer Shuvo</h4>
+                                <p class="text-overlay">More about selling in the
+                                    Envato Marketplaces</p>
+                            </div>
+                            <ul class="list-social">
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="visually-hidden">facebook</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="visually-hidden">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-behance" aria-hidden="true"></i>
+                                        <span class="visually-hidden">behance</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        <span class="visually-hidden">dribbble</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-speaker">
+                    <div class="card-img-speaker">
+                        <img src="assets/img/event.jpg" alt="people" class="img-speaker">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h4 class="title-overlay">Shahriyer Shuvo</h4>
+                                <p class="text-overlay">More about selling in the
+                                    Envato Marketplaces</p>
+                            </div>
+                            <ul class="list-social">
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="visually-hidden">facebook</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="visually-hidden">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-behance" aria-hidden="true"></i>
+                                        <span class="visually-hidden">behance</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        <span class="visually-hidden">dribbble</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-speaker">
+                    <div class="card-img-speaker">
+                        <img src="assets/img/event6.jpg" alt="people" class="img-speaker">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h4 class="title-overlay">Shahriyer Shuvo</h4>
+                                <p class="text-overlay">More about selling in the
+                                    Envato Marketplaces</p>
+                            </div>
+                            <ul class="list-social">
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="visually-hidden">facebook</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="visually-hidden">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-behance" aria-hidden="true"></i>
+                                        <span class="visually-hidden">behance</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        <span class="visually-hidden">dribbble</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-speaker">
+                    <div class="card-img-speaker">
+                        <img src="assets/img/event3.jpg" alt="people" class="img-speaker">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h4 class="title-overlay">Shahriyer Shuvo</h4>
+                                <p class="text-overlay">More about selling in the
+                                    Envato Marketplaces</p>
+                            </div>
+                            <ul class="list-social">
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="visually-hidden">facebook</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="visually-hidden">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-behance" aria-hidden="true"></i>
+                                        <span class="visually-hidden">behance</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        <span class="visually-hidden">dribbble</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-card-icon">
+                    <img src="assets/img/victoria.png" alt="victoria" class="img-icon-big">
+                </li>
+                <li class="item-speaker">
+                    <div class="card-img-speaker">
+                        <img src="assets/img/event6.jpg" alt="people" class="img-speaker">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h4 class="title-overlay">Shahriyer Shuvo</h4>
+                                <p class="text-overlay">More about selling in the
+                                    Envato Marketplaces</p>
+                            </div>
+                            <ul class="list-social">
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="visually-hidden">facebook</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="visually-hidden">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-behance" aria-hidden="true"></i>
+                                        <span class="visually-hidden">behance</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        <span class="visually-hidden">dribbble</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-speaker">
+                    <div class="card-img-speaker">
+                        <img src="assets/img/event.jpg" alt="people" class="img-speaker">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h4 class="title-overlay">Shahriyer Shuvo</h4>
+                                <p class="text-overlay">More about selling in the
+                                    Envato Marketplaces</p>
+                            </div>
+                            <ul class="list-social">
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="visually-hidden">facebook</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="visually-hidden">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-behance" aria-hidden="true"></i>
+                                        <span class="visually-hidden">behance</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        <span class="visually-hidden">dribbble</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-speaker">
+                    <div class="card-img-speaker">
+                        <img src="assets/img/event.jpg" alt="people" class="img-speaker">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h4 class="title-overlay">Shahriyer Shuvo</h4>
+                                <p class="text-overlay">More about selling in the
+                                    Envato Marketplaces</p>
+                            </div>
+                            <ul class="list-social">
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="visually-hidden">facebook</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="visually-hidden">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-behance" aria-hidden="true"></i>
+                                        <span class="visually-hidden">behance</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        <span class="visually-hidden">dribbble</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-speaker">
+                    <div class="card-img-speaker">
+                        <img src="assets/img/event3.jpg" alt="people" class="img-speaker">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h4 class="title-overlay">Shahriyer Shuvo</h4>
+                                <p class="text-overlay">More about selling in the
+                                    Envato Marketplaces</p>
+                            </div>
+                            <ul class="list-social">
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="visually-hidden">facebook</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="visually-hidden">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-behance" aria-hidden="true"></i>
+                                        <span class="visually-hidden">behance</span>
+                                    </a>
+                                </li>
+                                <li class="item-social">
+                                    <a href="#" class="link-social">
+                                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        <span class="visually-hidden">dribbble</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="sponsors" class="section-sponsors section-bg" style="background-image: url(assets/img/event5a.jpg)">
+        <div class="container container-default">
+            <h2 class="section-bg-title text-xl">Sponsor Our Event!</h2>
+            <div class="block-text">
+                <p class="text-section">If you want to help us making this event lively and successful, help us by
+                    sponsoring
+                    our event! This will help us bring in more people, have better livestreaming equipment, maybe even
+                    our
+                    own
+                    chef! You can also sponsor us by giving away free swag at the event!
+                </p>
+                <p class="text-section">Here’s who have sponsored us already:
+                </p>
+            </div>
+            <ul class="list-sponsors">
+                <li class="item-sponsor">
+                    <div class="wrap-img-sponsor">
+                        <img src="assets/img/sponsor1.png" alt="" class="img-sponsor">
+                    </div>
+                </li>
+                <li class="item-sponsor">
+                    <div class="wrap-img-sponsor">
+                        <img src="assets/img/sg1.png" alt="" class="img-sponsor">
+                    </div>
+                </li>
+                <li class="item-sponsor">
+                    <div class="wrap-img-sponsor">
+                        <img src="assets/img/sponsor3.png" alt="" class="img-sponsor">
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-main">Sponsor Us</a>
+        </div>
+    </section>
+
+    <section id="past" class="section-past-event">
+        <div class="container container-default">
+            <div class="box-text-past-event">
+                <h2 class="section-title text-xl">Past Events</h2>
+                <p class="text-section">Check out the photos of our previous events where we rocked with a lot of Famous
+                    and
+                    enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)
+            </div>
+        </div>
+        <div class="container">
+            <ul class="list-past-event">
+                <li class="item-past-event">
+                    <a href="#" class="link-event">
+                        <img src="assets/img/event5.jpg" alt="event5" class="img-past-event">
+                    </a>
+                </li>
+                <li class="item-past-event">
+                    <a href="#" class="link-event">
+                        <img src="assets/img/event4.jpg" alt="event2" class="img-past-event">
+                    </a>
+                </li>
+                <li class="item-past-event">
+                    <a href="#" class="link-event">
+                        <img src="assets/img/event7.jpg" alt="event7" class="img-past-event">
+                    </a>
+                </li>
+                <li class="item-past-event">
+                    <a href="#" class="link-event">
+                        <img src="assets/img/event2.jpg" alt="event4" class="img-past-event">
+                    </a>
+                </li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="#" class="link-past-event btn btn-dark btn-main">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container container-default">
+            <h2 class="visually-hidden">Contact</h2>
+            <div class="content-box">
+                <div class="adress">
+                    <div class="wrap-icon"></div>
+                    <p class="text-adress">
+                        Lorem Ipsum Avenue, 420/2 elm<br> street, Melbourne, Sydney - 2122,<br> Kingdom of Australia
+                    </p>
+                    <a href="#" class="btn btn-main">View Map</a>
+                </div>
+                <form class="form form-contact" action="#" method="post" enctype="multipart/form-data"
+                      name="form-contact">
+                    <ul class="contakt-list">
+                        <li class="form-item">
+                            <label for="email" class="visually-hidden">Enter your email</label>
+                            <input class="input" type="email" name="email" id="email"
+                                   pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                                   placeholder="Enter your email">
+                        </li>
+                        <li class="form-item">
+                            <label for="description" class="visually-hidden">Type your message</label>
+                            <textarea rows="9" cols="45" name="text" id="description" class="description input"
+                                      placeholder="Type your message"></textarea>
+                        </li>
+                        <li class="form-item">
+                            <button type="submit" class="btn btn-submit btn-dark">Send Message</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container container-default">
+            <div class="nav-bar">
+                <ul class="list-social">
+                    <li class="item-social">
+                        <a href="#" class="link-social"><i class="fa fa-facebook" aria-hidden="true"></i><span
+                                class="visually-hidden">facebook</span></a>
+                    </li>
+                    <li class="item-social">
+                        <a href="#" class="link-social"><i class="fa fa-twitter" aria-hidden="true"></i><span
+                                class="visually-hidden">twitter</span></a>
+                    </li>
+
+                    <li class="item-social">
+                        <a href="#" class="link-social"><i class="fa fa-linkedin" aria-hidden="true"></i><span
+                                class="visually-hidden">linkedin</span></a>
+                    </li>
+                    <li class="item-social">
+                        <a href="#" class="link-social"><i class="fa fa-google-plus" aria-hidden="true"></i><span
+                                class="visually-hidden">google-plus</span></a>
+                    </li>
+                    <li class="item-social">
+                        <a href="#" class="link-social"><i class="fa fa-tumblr" aria-hidden="true"></i><span
+                                class="visually-hidden">tumblr</span></a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-text">Hope we see you at the event!</p>
+            <p class="copiring">All Rights Reserved. Envato Bangladesh © 2015</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/source-js/main.js"></script>
+</div>
+</body>
+</html>
+
+
+
+
+

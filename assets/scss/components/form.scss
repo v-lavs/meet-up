@@ -1,0 +1,80 @@
+.form {
+    font-size: 19px;
+    text-align: center;
+    color: $grey;
+    box-shadow: 0px 1px 2px 0 rgba(35, 31, 32, 0.65);
+    .form-item {
+        margin-bottom: 20px;
+    }
+    .input {
+        display: block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        padding: 20px 0 15px 15px;
+        border: 1px solid $light-grey;
+        border-radius: 5px;
+        color: inherit;
+        &:focus {
+            border: 1px solid $secondary-color;
+            box-shadow: 0 0 0 3px rgba(70, 190, 9, 0.25);
+        }
+        .title-form {
+            font-size: 30px;
+            font-weight: bold;
+            color: $dark-200-color;
+            margin-bottom: 20px;
+        }
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $light-grey;
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: $light-grey;
+    }
+
+    :-ms-input-placeholder { /* IE 10+ */
+        color: $light-grey;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: $light-grey;
+    }
+    .title-form {
+        font-size: 24px;
+        font-weight: bold;
+        color: $dark-200-color;
+        margin-bottom: 20px;
+        @include respond-to($sm) {
+            font-size: 30px;
+        }
+    }
+    .title-form {
+        font-size: 24px;
+        font-weight: bold;
+        color: $dark-200-color;
+        margin-bottom: 20px;
+        @include respond-to($sm) {
+            font-size: 30px;
+        }
+    }
+    .text-form {
+        font-size: 15px;
+    }
+    &-registration {
+        width: 100%;
+        max-width: 430px;
+        padding: 33px 30px 21px;
+        margin: 0 auto 40px;
+        background: $primary-color;
+        .form-item {
+            margin-bottom: 28px;
+        }
+    }
+    &-contact {
+        box-shadow: none;
+        border: none;
+    }
+}

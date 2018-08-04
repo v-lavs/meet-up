@@ -1,0 +1,35 @@
+.footer {
+    background: $secondary-color;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0 auto;
+    color: $primary-color;
+    font-size: 18px;
+    @include respond-to($lg){
+        padding-top: 60px;
+    }
+    .list-social {
+        margin-bottom: 33px;
+    }
+    .item-social {
+        display: inline-block;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .link-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: $primary-color;
+    }
+.fa {
+    color: $secondary-color;
+    font-size: 30px;
+}
+
+}

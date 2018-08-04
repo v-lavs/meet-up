@@ -1,0 +1,52 @@
+.header-site {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: transparent;
+    padding: 45px 0 45px 0;
+    z-index: 9999;
+    .container-default {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .logo-site {
+        max-width: 180px;
+        display: block;
+    }
+    .img-logo-site {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .header-menu {
+        width: 100%;
+        max-width: 735px;
+    }
+    .btn-burger {
+        position: absolute;
+        right: 0;
+        top: 35px;
+        background: transparent;
+        border: none;
+        color: $primary-color;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            color: $secondary-color;
+            outline: 1px solid $secondary-color;
+        }
+        @include respond-to($lg) {
+            display: none;
+        }
+    }
+    .fa {
+        display: inline-block;
+        font: normal normal normal 20px/1 FontAwesome;
+        font-size: 30px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+}

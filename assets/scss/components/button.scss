@@ -1,0 +1,54 @@
+
+.btn {
+    display: inline-block;
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    font-family: $primary-font;
+    padding: 18px 25px 17px;
+    background-color: $secondary-color;
+    border-radius: 15px;
+    text-align: center;
+    transition: .35s;
+    &-main {
+        min-width: 200px;
+        border: 2px solid $secondary-color;
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+    }
+    &-submit {
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 22px;
+        font-weight: 400;
+        box-shadow: none;
+        border: 0;
+        border-radius: 5px;
+        transition: .35s;
+        &:hover,
+        &:focus {
+            background-color: $dark-color;
+        }
+    }
+    &-dark {
+        background-color: $dark-400-color;
+        border: $dark-400-color;
+        &:hover,
+        &:focus {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+
