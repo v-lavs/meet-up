@@ -4,17 +4,32 @@
     right: 0;
     top: 0;
     background: transparent;
-    padding: 45px 0 45px 0;
+    padding: 15px 0 15px 0;
     z-index: 9999;
+    @media all and (max-width: 1030px) {
+        .container {
+            width: 100%;
+            max-width: none;
+        }
+    }
+    @media all and (min-width: 1400px){
+        padding: 45px 0 45px 0;
+    }
     .container-default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
+        @include respond-to($lg) {
+            align-items: flex-end;
+        }
     }
     .logo-site {
-        max-width: 180px;
+        max-width: 130px;
         display: block;
+        @include respond-to($sm) {
+            max-width: 180px;
+        }
     }
     .img-logo-site {
         display: block;
@@ -26,7 +41,6 @@
         max-width: 735px;
     }
     .btn-burger {
-        position: absolute;
         right: 0;
         top: 35px;
         background: transparent;

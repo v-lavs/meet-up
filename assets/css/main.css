@@ -122,16 +122,29 @@ body {
   right: 0;
   top: 0;
   background: transparent;
-  padding: 45px 0 45px 0;
+  padding: 15px 0 15px 0;
   z-index: 9999; }
+  @media all and (max-width: 1030px) {
+    .header-site .container {
+      width: 100%;
+      max-width: none; } }
+  @media all and (min-width: 1400px) {
+    .header-site {
+      padding: 45px 0 45px 0; } }
   .header-site .container-default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end; }
+    align-items: center; }
+    @media only screen and (min-width: 1030px) {
+      .header-site .container-default {
+        align-items: flex-end; } }
   .header-site .logo-site {
-    max-width: 180px;
+    max-width: 130px;
     display: block; }
+    @media only screen and (min-width: 540px) {
+      .header-site .logo-site {
+        max-width: 180px; } }
   .header-site .img-logo-site {
     display: block;
     width: 100%;
@@ -140,7 +153,6 @@ body {
     width: 100%;
     max-width: 735px; }
   .header-site .btn-burger {
-    position: absolute;
     right: 0;
     top: 35px;
     background: transparent;
@@ -707,7 +719,8 @@ body {
         width: 57%;
         padding-right: 75px; } }
   .section-schedule .form-registration {
-    width: 100%; }
+    width: 100%;
+    margin-top: 45px; }
     @media only screen and (min-width: 1030px) {
       .section-schedule .form-registration {
         position: relative;
