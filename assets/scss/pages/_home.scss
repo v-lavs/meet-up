@@ -63,8 +63,11 @@
     background-repeat: no-repeat;
     background-color: $light-broun;
     width: 100%;
-    min-height: 700px;
+    min-height: 400px;
     color: $primary-color;
+    @include respond-to($sm) {
+        min-height: 700px;
+    }
     @include respond-to($lg) {
         min-height: 770px;
     }
@@ -110,8 +113,11 @@
 }
 
 .section-banner {
-    min-height: 100vh;
-    padding-top: 195px;
+    padding-top: 135px;
+    @media all and (orientation:landscape) and (max-width: 760px){
+        min-height: 100vh;
+        padding-top: 100px;
+    }
     @include respond-to($md) {
         padding-top: 226px;
     }
@@ -136,7 +142,7 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 0 25px 100vw;
+        border-width: 0 0 35px 100vw;
         border-color: transparent transparent $primary-color transparent;
         z-index: 3;
         @include respond-to($sm) {
@@ -159,24 +165,44 @@
         @include respond-to($sm) {
             bottom: 20px;
         }
+        //@media all and (orientation:landscape) and (max-width: 760px){
+        //    bottom: 0;
+        //}
         .container {
             padding-bottom: 0;
             @include respond-to($sm) {
                 padding-bottom: 10px;
             }
+            //@media all and (orientation:landscape) and (max-width: 760px){
+            //    padding-bottom: 0;
+            //}
             @include respond-to($md) {
                 padding-left: 50px;
             }
         }
+
         .list-icon-event {
             display: flex;
-            transform: rotate(-3deg);
+            transform: rotate(-4deg);
+            @media all and (orientation:landscape) and (max-width: 760px){
+                margin: 0 0 0 10%;
+            }
         }
         .item-icon-event {
             animation: move 1.5s ease-in-out forwards;
-            max-width: 182px;
+            max-width: 100px;
             margin-left: -5%;
             opacity: 0;
+            //@media all and (orientation:landscape) and (max-width: 760px){
+            //    max-width: 100px;
+            //}
+            @include respond-to($md){
+                max-width: 150px;
+            }
+            @include respond-to($xl){
+                max-width: 185px;
+            }
+
             &:first-child {
                 margin-left: 0;
             }

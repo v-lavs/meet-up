@@ -465,6 +465,9 @@ body {
   border: 2px solid #90d23d;
   border-radius: 10px;
   padding: 25px 10px 20px; }
+  @media all and (orientation: landscape) {
+    .wraper-coutdown {
+      padding: 10px; } }
   @media only screen and (min-width: 1030px) {
     .wraper-coutdown {
       padding: 5px 80px 20px; } }
@@ -540,8 +543,11 @@ body {
   background-repeat: no-repeat;
   background-color: #d6c5c5;
   width: 100%;
-  min-height: 700px;
+  min-height: 400px;
   color: #ffffff; }
+  @media only screen and (min-width: 540px) {
+    .section-bg {
+      min-height: 700px; } }
   @media only screen and (min-width: 1030px) {
     .section-bg {
       min-height: 770px; } }
@@ -583,8 +589,11 @@ body {
       margin-bottom: 37px; } }
 
 .section-banner {
-  min-height: 100vh;
-  padding-top: 195px; }
+  padding-top: 135px; }
+  @media all and (orientation: landscape) and (max-width: 760px) {
+    .section-banner {
+      min-height: 100vh;
+      padding-top: 100px; } }
   @media only screen and (min-width: 720px) {
     .section-banner {
       padding-top: 226px; } }
@@ -608,7 +617,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 25px 100vw;
+    border-width: 0 0 35px 100vw;
     border-color: transparent transparent #ffffff transparent;
     z-index: 3; }
     @media only screen and (min-width: 540px) {
@@ -639,12 +648,21 @@ body {
           padding-left: 50px; } }
     .section-banner .wrapper-animate .list-icon-event {
       display: flex;
-      transform: rotate(-3deg); }
+      transform: rotate(-4deg); }
+      @media all and (orientation: landscape) and (max-width: 760px) {
+        .section-banner .wrapper-animate .list-icon-event {
+          margin: 0 0 0 10%; } }
     .section-banner .wrapper-animate .item-icon-event {
       animation: move 1.5s ease-in-out forwards;
-      max-width: 182px;
+      max-width: 100px;
       margin-left: -5%;
       opacity: 0; }
+      @media only screen and (min-width: 720px) {
+        .section-banner .wrapper-animate .item-icon-event {
+          max-width: 150px; } }
+      @media only screen and (min-width: 1200px) {
+        .section-banner .wrapper-animate .item-icon-event {
+          max-width: 185px; } }
       .section-banner .wrapper-animate .item-icon-event:first-child {
         margin-left: 0; }
       .section-banner .wrapper-animate .item-icon-event:nth-of-type(1) {
