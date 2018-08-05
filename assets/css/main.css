@@ -502,7 +502,7 @@ body {
     .section-banner {
       padding-top: 225px;
       padding-bottom: 225px; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1300px) {
     .section-banner {
       min-height: 770px; } }
   .section-banner:after {
@@ -557,7 +557,7 @@ body {
       @media only screen and (min-width: 1100px) {
         .section-banner .wrapper-animate .container {
           padding-bottom: 40px; } }
-      @media only screen and (min-width: 1200px) {
+      @media only screen and (min-width: 1300px) {
         .section-banner .wrapper-animate .container {
           padding-bottom: 50px; } }
     .section-banner .wrapper-animate .list-icon-event {
@@ -572,7 +572,7 @@ body {
       @media only screen and (min-width: 720px) {
         .section-banner .wrapper-animate .item-icon-event {
           max-width: 150px; } }
-      @media only screen and (min-width: 1200px) {
+      @media only screen and (min-width: 1300px) {
         .section-banner .wrapper-animate .item-icon-event {
           max-width: 185px; } }
       .section-banner .wrapper-animate .item-icon-event:first-child {
@@ -722,6 +722,11 @@ body {
       .section-reward .wrap-img-revard {
         top: -150px; } }
     @media only screen and (min-width: 1100px) {
+      .section-reward .wrap-img-revard {
+        width: 242px;
+        height: 357px;
+        top: -192px; } }
+    @media only screen and (min-width: 1300px) {
       .section-reward .wrap-img-revard {
         width: 354px;
         height: 357px;
@@ -1154,7 +1159,7 @@ body {
   @media only screen and (min-width: 720px) {
     .bounceInDown {
       margin-bottom: 20px; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1300px) {
     .bounceInDown {
       margin-bottom: 0; } }
 

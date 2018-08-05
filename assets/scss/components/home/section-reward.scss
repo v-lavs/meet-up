@@ -25,7 +25,12 @@
         @include respond-to($md) {
             top: -150px;
         }
-        @include respond-to($lg) {
+        @include respond-to($lg){
+            width: 242px;
+            height: 357px;
+            top: -192px
+        }
+        @include respond-to($xl) {
             width: 354px;
             height: 357px;
             top: -260px;
