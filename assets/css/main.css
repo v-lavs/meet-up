@@ -112,7 +112,7 @@ body {
   @media only screen and (min-width: 720px) {
     .container-default {
       max-width: 720px; } }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .container-default {
       max-width: 1030px; } }
 
@@ -136,7 +136,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .header-site .container-default {
         align-items: flex-end; } }
   .header-site .logo-site {
@@ -162,7 +162,7 @@ body {
     .header-site .btn-burger:hover, .header-site .btn-burger:focus {
       color: #90d23d;
       outline: 1px solid #90d23d; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .header-site .btn-burger {
         display: none; } }
   .header-site .fa {
@@ -179,7 +179,7 @@ body {
   margin: 0 auto;
   color: #ffffff;
   font-size: 18px; }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .footer {
       padding-top: 60px; } }
   .footer .list-social {
@@ -204,7 +204,7 @@ body {
 .menu {
   display: none;
   margin: 0; }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .menu {
       display: flex;
       flex-wrap: wrap;
@@ -215,7 +215,7 @@ body {
     text-align: right; }
     .menu .menu-item:last-child {
       border: none; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .menu .menu-item {
         display: inline-block;
         border: none;
@@ -261,7 +261,7 @@ body {
   margin-bottom: 20px; }
   .header-menu .btn-close:hover, .header-menu .btn-close:focus {
     color: #90d23d; }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .header-menu .btn-close {
       display: none; } }
 
@@ -460,7 +460,7 @@ body {
 .wraper-coutdown {
   margin: 0 auto;
   width: 100%;
-  max-width: 970px;
+  max-width: 470px;
   background: transparent;
   border: 2px solid #90d23d;
   border-radius: 10px;
@@ -468,8 +468,9 @@ body {
   @media all and (orientation: landscape) {
     .wraper-coutdown {
       padding: 10px; } }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .wraper-coutdown {
+      max-width: 970px;
       padding: 5px 80px 20px; } }
   .wraper-coutdown #countdown {
     display: flex;
@@ -477,7 +478,7 @@ body {
     width: 100%;
     font-size: 35px;
     color: #ffffff; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .wraper-coutdown #countdown {
         font-size: 120px;
         font-weight: 100; } }
@@ -489,20 +490,21 @@ body {
     display: block;
     font-size: 12px;
     text-transform: uppercase; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .wraper-coutdown .signature-counter {
         font-size: 25px;
         font-weight: 400; } }
 
 .section-banner {
-  padding: 135px 0 160px;
+  padding: 120px 0 200px;
   overflow: hidden; }
-  @media only screen and (min-width: 720px) {
+  @media only screen and (min-width: 1100px) {
     .section-banner {
-      padding: 225px 0; } }
-  @media only screen and (min-width: 1030px) {
+      padding-top: 225px;
+      padding-bottom: 225px; } }
+  @media only screen and (min-width: 1200px) {
     .section-banner {
-      min-height: 100vh; } }
+      min-height: 770px; } }
   .section-banner:after {
     position: absolute;
     content: "";
@@ -546,10 +548,16 @@ body {
       @media only screen and (min-width: 540px) {
         .section-banner .wrapper-animate .container {
           padding-bottom: 11px; } }
+      @media all and (orientation: landscape) {
+        .section-banner .wrapper-animate .container {
+          padding-left: 15%; } }
       @media only screen and (min-width: 720px) {
         .section-banner .wrapper-animate .container {
           padding-left: 50px; } }
-      @media only screen and (min-width: 1030px) {
+      @media only screen and (min-width: 1100px) {
+        .section-banner .wrapper-animate .container {
+          padding-bottom: 40px; } }
+      @media only screen and (min-width: 1200px) {
         .section-banner .wrapper-animate .container {
           padding-bottom: 50px; } }
     .section-banner .wrapper-animate .list-icon-event {
@@ -621,14 +629,14 @@ body {
       .section-schedule:after {
         border-width: 80px 100vw 0 0;
         bottom: -80px; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-schedule:after {
         border-width: 120px 100vw 0 0;
         bottom: -120px; } }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .section-schedule {
       padding-bottom: 160px; } }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .section-schedule .greeting {
       display: flex;
       flex-wrap: wrap;
@@ -636,14 +644,14 @@ body {
       padding-bottom: 140px; } }
   .section-schedule .box-motivation {
     width: 100%; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-schedule .box-motivation {
         width: 57%;
         padding-right: 75px; } }
   .section-schedule .form-registration {
     width: 100%;
     margin-top: 45px; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-schedule .form-registration {
         position: relative;
         width: 43%;
@@ -660,7 +668,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-schedule .list-subjects {
         margin-bottom: 50px; } }
   .section-schedule .item-subjects {
@@ -692,7 +700,7 @@ body {
   @media only screen and (min-width: 540px) {
     .section-reward {
       padding: 130px 0; } }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .section-reward {
       padding: 170px 0 175px; } }
   .section-reward .container-default {
@@ -713,7 +721,7 @@ body {
     @media only screen and (min-width: 720px) {
       .section-reward .wrap-img-revard {
         top: -150px; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-reward .wrap-img-revard {
         width: 354px;
         height: 357px;
@@ -728,7 +736,7 @@ body {
     margin-bottom: 35px; }
   .section-reward .wrap-btn {
     text-align: center; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-reward .wrap-btn {
         text-align: right; } }
   .section-reward .section-title {
@@ -736,7 +744,7 @@ body {
     @media only screen and (min-width: 540px) {
       .section-reward .section-title {
         margin-bottom: 35px; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-reward .section-title {
         margin-bottom: 35px; } }
 
@@ -762,11 +770,11 @@ body {
       .section-speakers:after {
         border-width: 80px 100vw 0 0;
         bottom: -80px; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-speakers:after {
         border-width: 120px 100vw 0 0;
         bottom: -120px; } }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .section-speakers {
       padding: 145px 0 180px; } }
   .section-speakers .section-title {
@@ -780,7 +788,7 @@ body {
     max-width: 575px;
     margin-bottom: 30px;
     margin-left: 15px; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-speakers .text-section {
         margin-bottom: 60px; } }
   .section-speakers .list-speakers {
@@ -803,7 +811,7 @@ body {
     @media only screen and (min-width: 720px) {
       .section-speakers .item-speaker {
         width: 47%; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-speakers .item-speaker {
         width: 32%;
         margin: 0 0 40px; } }
@@ -818,7 +826,7 @@ body {
     @media only screen and (min-width: 720px) {
       .section-speakers .item-card-icon {
         width: 47%; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-speakers .item-card-icon {
         width: 32%; } }
   .section-speakers .img-icon-big {
@@ -909,7 +917,7 @@ body {
   @media only screen and (min-width: 540px) {
     .section-sponsors {
       padding: 100px 0 130px; } }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .section-sponsors {
       padding: 170px 0 130px; } }
   .section-sponsors:after {
@@ -969,10 +977,10 @@ body {
 
 .section-past-event {
   padding: 50px 0; }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .section-past-event {
       padding: 110px 0 95px; } }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .section-past-event .box-text-past-event {
       margin-bottom: 90px; } }
   .section-past-event .text-section {
@@ -983,7 +991,7 @@ body {
     @media only screen and (min-width: 540px) {
       .section-past-event .list-past-event {
         margin-bottom: 40px; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-past-event .list-past-event {
         display: flex;
         flex-wrap: wrap;
@@ -991,13 +999,13 @@ body {
   .section-past-event .item-past-event {
     overflow: hidden;
     margin-bottom: 15px; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-past-event .item-past-event {
         width: 45%;
         max-width: 570px;
         flex-grow: 1;
         margin: 0; } }
-  @media only screen and (min-width: 1030px) and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) and (min-width: 1100px) {
     .section-past-event .item-past-event:nth-child(3n+1) {
       width: 55%;
       max-width: 600px; } }
@@ -1011,7 +1019,7 @@ body {
     @media only screen and (min-width: 540px) {
       .section-past-event .link-event:nth-child(3n+1) {
         padding-top: 67%; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-past-event .link-event:nth-child(3n+1) {
         padding-top: 53%; } }
   .section-past-event .img-past-event {
@@ -1046,7 +1054,7 @@ body {
   min-height: 660px;
   padding: 50px 0;
   color: #ffffff; }
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 1100px) {
     .section-contact {
       padding: 65px 0; } }
   .section-contact:after {
@@ -1081,7 +1089,7 @@ body {
     @media only screen and (min-width: 720px) {
       .section-contact .adress {
         max-width: 330px; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-contact .adress {
         padding: 35px 30px 0; } }
   .section-contact .wrap-icon {
@@ -1093,7 +1101,7 @@ body {
     margin: 0 auto 20px;
     width: 132px;
     height: 140px; }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-contact .wrap-icon {
         margin-bottom: 45px; } }
   .section-contact .text-adress {
@@ -1143,6 +1151,12 @@ body {
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown; }
+  @media only screen and (min-width: 720px) {
+    .bounceInDown {
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 1200px) {
+    .bounceInDown {
+      margin-bottom: 0; } }
 
 .text-section {
   margin-bottom: 16px; }
@@ -1178,7 +1192,7 @@ body {
     @media only screen and (min-width: 720px) {
       .section-bg:before {
         border-width: 0 0 80px 100vw; } }
-    @media only screen and (min-width: 1030px) {
+    @media only screen and (min-width: 1100px) {
       .section-bg:before {
         border-width: 0 0 120px 100vw; } }
   .section-bg .section-bg-title {

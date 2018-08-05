@@ -1,11 +1,12 @@
 .section-banner {
-    padding: 135px 0 160px;
+    padding: 120px 0 200px;
     overflow: hidden;
-    @include respond-to($md) {
-        padding: 225px 0;
+    @include respond-to($lg) {
+        padding-top: 225px;
+        padding-bottom: 225px;
     }
-    @include respond-to($lg){
-       min-height: 100vh;
+    @include respond-to($xl) {
+        min-height: 770px;
     }
     &:after {
         position: absolute;
@@ -53,10 +54,16 @@
             @include respond-to($sm) {
                 padding-bottom: 11px;
             }
+            @media all and (orientation:landscape) {
+                padding-left: 15%;
+            }
             @include respond-to($md) {
                 padding-left: 50px;
             }
             @include respond-to($lg) {
+                padding-bottom: 40px;
+            }
+            @include respond-to($xl) {
                 padding-bottom: 50px;
             }
         }
@@ -71,10 +78,10 @@
             max-width: 100px;
             margin-left: -5%;
             opacity: 0;
-            @include respond-to($md){
+            @include respond-to($md) {
                 max-width: 150px;
             }
-            @include respond-to($xl){
+            @include respond-to($xl) {
                 max-width: 185px;
             }
 

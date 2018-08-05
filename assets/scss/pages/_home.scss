@@ -58,6 +58,12 @@
 .bounceInDown {
     -webkit-animation-name: bounceInDown;
     animation-name: bounceInDown;
+    @include respond-to($md){
+          margin-bottom: 20px;
+      }
+    @include respond-to($xl){
+        margin-bottom: 0;
+    }
 }
 
 .text-section {

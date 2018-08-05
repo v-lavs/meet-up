@@ -1,7 +1,7 @@
 .wraper-coutdown {
     margin: 0 auto;
     width: 100%;
-    max-width: 970px;
+    max-width: 470px;
     background: transparent;
     border: 2px solid $secondary-color;
     border-radius: 10px;
@@ -10,6 +10,7 @@
         padding: 10px;
     }
     @include respond-to($lg) {
+        max-width: 970px;
         padding: 5px 80px 20px;
     }
     #countdown {
