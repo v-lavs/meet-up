@@ -99,6 +99,7 @@
         border-width: 0 0 50px 100vw;
         border-color: transparent transparent $primary-color transparent;
         z-index: 3;
+
         @include respond-to($md) {
             border-width: 0 0 80px 100vw;
         }

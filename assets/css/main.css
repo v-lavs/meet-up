@@ -632,7 +632,7 @@ body {
     @media only screen and (min-width: 1100px) {
       .section-schedule:after {
         border-width: 120px 100vw 0 0;
-        bottom: -120px; } }
+        bottom: -118px; } }
   @media only screen and (min-width: 1100px) {
     .section-schedule {
       padding-bottom: 160px; } }
@@ -773,7 +773,7 @@ body {
     @media only screen and (min-width: 1100px) {
       .section-speakers:after {
         border-width: 120px 100vw 0 0;
-        bottom: -120px; } }
+        bottom: -118px; } }
   @media only screen and (min-width: 1100px) {
     .section-speakers {
       padding: 145px 0 180px; } }
