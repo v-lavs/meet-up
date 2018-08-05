@@ -1,0 +1,177 @@
+.section-speakers {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 100vw 0 0;
+        border-color: $primary-color transparent transparent transparent;
+        z-index: 2;
+        @include respond-to($sm) {
+            border-width: 58px 100vw 0 0;
+            bottom: -58px;
+        }
+        @include respond-to($md) {
+            border-width: 80px 100vw 0 0;
+            bottom: -80px;
+        }
+        @include respond-to($lg) {
+            border-width: 120px 100vw 0 0;
+            bottom: -120px;
+        }
+    }
+    padding: 50px 0;
+    @include respond-to($lg) {
+        padding: 145px 0 180px;
+    }
+    .section-title {
+        margin-bottom: 20px;
+        margin-left: 15px;
+        @include respond-to($sm) {
+            margin-bottom: 20px;
+        }
+    }
+    .text-section {
+        width: 100%;
+        max-width: 575px;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        @include respond-to($lg) {
+            margin-bottom: 60px;
+        }
+    }
+    .list-speakers {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 970px;
+        margin: 0 auto;
+        @include respond-to($md) {
+            justify-content: space-between;
+        }
+    }
+    .item-speaker {
+        position: relative;
+        width: 100%;
+        max-width: 295px;
+        background-color: $secondary-color;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 0 auto 40px;
+        @include respond-to($md) {
+            width: 47%;
+        }
+        @include respond-to($lg) {
+            width: 32%;
+            margin: 0 0 40px;
+        }
+    }
+    .item-card-icon {
+        width: 100%;
+        max-width: 295px;
+        height: auto;
+        overflow: hidden;
+        border-radius: 15px;
+        margin: 0 auto 40px;
+        padding: 30px;
+        @include respond-to($md) {
+            width: 47%;
+        }
+        @include respond-to($lg) {
+            width: 32%;
+        }
+    }
+    .img-icon-big {
+        display: block;
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+    .card-img-speaker {
+        position: relative;
+        padding-top: 100%;
+        overflow: hidden;
+    }
+    .img-speaker {
+        position: absolute;
+        top: 0;
+        display: block;
+        max-width: 100%;
+        min-height: 100%;
+    }
+    .overlay {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 35px 30px 25px;
+        color: $primary-color;
+        background-color: $secondary-color;
+        background-image: url(../img/bg-overlay.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+        opacity: 0;
+        transition: .5s;
+        &:hover {
+            opacity: .9;
+        }
+        .item-social {
+            display: inline-block;
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .link-social {
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            color: $dark-green;
+            background-color: $primary-color;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+            transition: .35s;
+            &:hover,
+            &:focus {
+                color: $dark-color;
+            }
+        }
+    }
+    .title-overlay {
+        position: relative;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: .97;
+        padding-bottom: 13px;
+        margin-bottom: 20px;
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 83px;
+            height: 6px;
+            background-color: $primary-color;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .text-overlay {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fefefe;
+    }
+
+}

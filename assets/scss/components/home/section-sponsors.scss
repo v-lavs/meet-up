@@ -1,0 +1,79 @@
+.section-sponsors {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 700px;
+    padding: 70px 0;
+    @include respond-to($sm) {
+        padding: 100px 0 130px;
+    }
+    color: $primary-color;
+    @include respond-to($lg) {
+        padding: 170px 0 130px;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, 0.7);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .container-default {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+    }
+    .section-title {
+        margin-bottom: 20px;
+        color: inherit;
+        @include respond-to($sm) {
+            margin-bottom: 25px;
+        }
+    }
+    .list-sponsors {
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        @include respond-to($sm) {
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        @include respond-to($md) {
+            margin-bottom: 65px;
+        }
+    }
+    .item-sponsor {
+        width: 100%;
+        max-width: 178px;
+        margin: 0 auto 30px;
+        @include respond-to($sm) {
+            width: 50%;
+        }
+        @include respond-to($md) {
+            width: 30%;
+            margin-bottom: 0;
+        }
+    }
+    .wrap-img-sponsor {
+        width: 100%;
+        height: auto;
+    }
+    .img-sponsor {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .block-text {
+        @include respond-to($sm) {
+            margin-bottom: 53px;
+        }
+    }
+}

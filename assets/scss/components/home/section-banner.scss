@@ -1,0 +1,122 @@
+.section-banner {
+    padding: 135px 0 160px;
+    overflow: hidden;
+    @include respond-to($md) {
+        padding: 225px 0;
+    }
+    @include respond-to($lg){
+       min-height: 100vh;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, 0.7);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 35px 100vw;
+        border-color: transparent transparent $primary-color transparent;
+        z-index: 3;
+        @include respond-to($sm) {
+            border-width: 0 0 58px 100vw;
+        }
+        @include respond-to($md) {
+            border-width: 0 0 120px 100vw;
+        }
+    }
+    .container-default {
+        position: relative;
+        z-index: 2;
+    }
+    .wrapper-animate {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        z-index: 2;
+        @include respond-to($sm) {
+            bottom: 20px;
+        }
+        .container {
+            padding-bottom: 0;
+            @include respond-to($sm) {
+                padding-bottom: 11px;
+            }
+            @include respond-to($md) {
+                padding-left: 50px;
+            }
+            @include respond-to($lg) {
+                padding-bottom: 50px;
+            }
+        }
+
+        .list-icon-event {
+            display: flex;
+            transform: rotate(-4deg);
+            transform-origin: 100%;
+        }
+        .item-icon-event {
+            animation: move 1.5s ease-in-out forwards;
+            max-width: 100px;
+            margin-left: -5%;
+            opacity: 0;
+            @include respond-to($md){
+                max-width: 150px;
+            }
+            @include respond-to($xl){
+                max-width: 185px;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+            &:nth-of-type(1) {
+                z-index: 5;
+                animation-delay: .1s;
+            }
+            &:nth-of-type(2) {
+                z-index: 4;
+                animation-delay: .2s;
+            }
+            &:nth-of-type(3) {
+                z-index: 3;
+                animation-delay: .3s;
+            }
+            &:nth-of-type(4) {
+                z-index: 2;
+                animation-delay: .4s;
+            }
+            &:nth-of-type(5) {
+                z-index: 1;
+                animation-delay: .5s;
+            }
+        }
+        .img-icon-event {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @keyframes move {
+            from {
+                opacity: 1;
+                transform: translate(100vw, 0px) rotate(0);
+            }
+            to {
+                opacity: 1;
+                transform: translate(0, 0) rotate(-720deg);
+                bottom: 20px;
+            }
+        }
+    }
+}

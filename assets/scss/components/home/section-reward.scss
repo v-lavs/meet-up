@@ -1,0 +1,60 @@
+.section-reward {
+    padding: 70px 0;
+    @include respond-to($sm) {
+        padding: 130px 0;
+    }
+    @include respond-to($lg) {
+        padding: 170px 0 175px;
+    }
+    .container-default {
+        position: relative;
+        text-align: right;
+        z-index: 2;
+    }
+    .wrap-img-revard {
+        position: absolute;
+        top: -105px;
+        width: 110px;
+        height: auto;
+        z-index: 3;
+        @include respond-to($sm) {
+            width: 185px;
+            height: auto;
+            top: -180px;
+        }
+        @include respond-to($md) {
+            top: -150px;
+        }
+        @include respond-to($lg) {
+            width: 354px;
+            height: 357px;
+            top: -260px;
+        }
+    }
+    .img-revard {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .conditions-text {
+        max-width: 665px;
+        margin-left: auto;
+        margin-bottom: 35px;
+    }
+    .wrap-btn {
+        text-align: center;
+        @include respond-to($lg) {
+            text-align: right;
+        }
+    }
+    .section-title {
+        margin-bottom: 20px;
+        @include respond-to($sm) {
+            margin-bottom: 35px;
+        }
+        @include respond-to($lg) {
+            margin-bottom: 35px;
+        }
+    }
+
+}

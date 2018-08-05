@@ -1,0 +1,101 @@
+.section-schedule {
+    position: relative;
+    background: $primary-color;
+    padding: 50px 0;
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 100vw 0 0;
+        border-color: $primary-color transparent transparent transparent;
+        z-index: 2;
+        @include respond-to($sm) {
+            border-width: 58px 100vw 0 0;
+            bottom: -58px;
+        }
+        @include respond-to($md) {
+            border-width: 80px 100vw 0 0;
+            bottom: -80px;
+        }
+        @include respond-to($lg) {
+            border-width: 120px 100vw 0 0;
+            bottom: -120px;
+        }
+    }
+    @include respond-to($lg) {
+        padding-bottom: 160px;
+    }
+    .greeting {
+        @include respond-to($lg) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            padding-bottom: 140px;
+        }
+    }
+    .box-motivation {
+        width: 100%;
+        @include respond-to($lg) {
+            width: 57%;
+            padding-right: 75px;
+        }
+    }
+    .form-registration {
+        width: 100%;
+        margin-top: 45px;
+        @include respond-to($lg) {
+            position: relative;
+            width: 43%;
+            max-width: 430px;
+            margin-top: -300px;
+            margin-bottom: 0;
+            z-index: 4;
+        }
+    }
+    .motivation {
+        margin-bottom: 20px;
+    }
+    .list-subjects {
+        width: 100%;
+        @include respond-to($md) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include respond-to($lg) {
+            margin-bottom: 50px;
+        }
+    }
+    .item-subjects {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+        @include respond-to($md) {
+            width: 50%;
+        }
+    }
+    .card-subjects {
+        width: 100%;
+        padding: 0 5px 30px;
+        text-align: center;
+    }
+    .bg-icon-event {
+        display: block;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 143px;
+        height: 130px;
+        margin: 0 auto 20px;
+    }
+    .card-title {
+        margin-bottom: 15px;
+    }
+    .accordeon {
+        margin: 0 auto 40px;
+    }
+}

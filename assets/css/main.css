@@ -494,112 +494,15 @@ body {
         font-size: 25px;
         font-weight: 400; } }
 
-.wrapper {
-  overflow: hidden; }
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@keyframes bounceInDown {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0); }
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0); }
-  75% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0); }
-  90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0); }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
-.bounceInDown {
-  -webkit-animation-name: bounceInDown;
-  animation-name: bounceInDown; }
-
-.text-section {
-  margin-bottom: 16px; }
-
-.section-bg {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #d6c5c5;
-  width: 100%;
-  min-height: 400px;
-  color: #ffffff; }
-  @media only screen and (min-width: 540px) {
-    .section-bg {
-      min-height: 700px; } }
-  @media only screen and (min-width: 1030px) {
-    .section-bg {
-      min-height: 770px; } }
-  .section-bg:after {
-    position: absolute;
-    content: "";
-    background: rgba(0, 0, 0, 0.7);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1; }
-  .section-bg:before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 25px 100vw;
-    border-color: transparent transparent #ffffff transparent;
-    z-index: 2; }
-    @media only screen and (min-width: 540px) {
-      .section-bg:before {
-        border-width: 0 0 58px 100vw; } }
-    @media only screen and (min-width: 720px) {
-      .section-bg:before {
-        border-width: 0 0 80px 100vw; } }
-    @media only screen and (min-width: 1030px) {
-      .section-bg:before {
-        border-width: 0 0 120px 100vw; } }
-
-.section-bg-title {
-  margin-bottom: 20px;
-  color: inherit; }
-  @media only screen and (min-width: 540px) {
-    .section-bg-title {
-      margin-bottom: 37px; } }
-
 .section-banner {
-  padding-top: 135px; }
-  @media all and (orientation: landscape) and (max-width: 760px) {
-    .section-banner {
-      min-height: 100vh;
-      padding-top: 100px; } }
+  padding: 135px 0 160px;
+  overflow: hidden; }
   @media only screen and (min-width: 720px) {
     .section-banner {
-      padding-top: 226px; } }
+      padding: 225px 0; } }
   @media only screen and (min-width: 1030px) {
     .section-banner {
-      min-height: 770px; } }
+      min-height: 100vh; } }
   .section-banner:after {
     position: absolute;
     content: "";
@@ -642,16 +545,17 @@ body {
       padding-bottom: 0; }
       @media only screen and (min-width: 540px) {
         .section-banner .wrapper-animate .container {
-          padding-bottom: 10px; } }
+          padding-bottom: 11px; } }
       @media only screen and (min-width: 720px) {
         .section-banner .wrapper-animate .container {
           padding-left: 50px; } }
+      @media only screen and (min-width: 1030px) {
+        .section-banner .wrapper-animate .container {
+          padding-bottom: 50px; } }
     .section-banner .wrapper-animate .list-icon-event {
       display: flex;
-      transform: rotate(-4deg); }
-      @media all and (orientation: landscape) and (max-width: 760px) {
-        .section-banner .wrapper-animate .list-icon-event {
-          margin: 0 0 0 10%; } }
+      transform: rotate(-4deg);
+      transform-origin: 100%; }
     .section-banner .wrapper-animate .item-icon-event {
       animation: move 1.5s ease-in-out forwards;
       max-width: 100px;
@@ -1200,5 +1104,88 @@ body {
       color: #373737; }
   .section-contact .form-contact {
     margin: 0 auto; }
+
+.wrapper {
+  overflow: hidden; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown; }
+
+.text-section {
+  margin-bottom: 16px; }
+
+.section-bg {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #d6c5c5;
+  width: 100%;
+  color: #ffffff; }
+  .section-bg:after {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; }
+  .section-bg:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 100vw;
+    border-color: transparent transparent #ffffff transparent;
+    z-index: 3; }
+    @media only screen and (min-width: 720px) {
+      .section-bg:before {
+        border-width: 0 0 80px 100vw; } }
+    @media only screen and (min-width: 1030px) {
+      .section-bg:before {
+        border-width: 0 0 120px 100vw; } }
+  .section-bg .section-bg-title {
+    margin-bottom: 20px;
+    color: inherit; }
+    @media only screen and (min-width: 540px) {
+      .section-bg .section-bg-title {
+        margin-bottom: 37px; } }
 
 /*# sourceMappingURL=map/main.css.map */
