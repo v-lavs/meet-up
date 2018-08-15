@@ -37,7 +37,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass:build', function () {
-    return gulp.src('./assets/scss/screen.scss')
+    return gulp.src('./assets/scss/main.scss')
         .pipe(plumber({errorHandler: onError}))
         .pipe(sass(config.sassOptions))
         .pipe(autoprefixer({
