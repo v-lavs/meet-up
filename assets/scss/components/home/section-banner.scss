@@ -55,7 +55,7 @@
                 padding-bottom: 11px;
             }
             @media all and (orientation:landscape) {
-                padding-left: 15%;
+                padding-left: 7%;
             }
             @include respond-to($md) {
                 padding-left: 50px;
