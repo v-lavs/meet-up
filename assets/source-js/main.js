@@ -14,7 +14,7 @@ jQuery(document).ready(function () {
 
 //coutdawn
 
-  var countDownDate = new Date("Feb 20, 2019 23:07:05").getTime();
+  var countDownDate = new Date("Feb 19, 2019 23:07:05").getTime();
 
   var daysTag = document.getElementById("days");
   var hoursTag = document.getElementById("hours");
